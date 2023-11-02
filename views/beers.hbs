@@ -1,6 +1,6 @@
 
     <h1>beers</h1>
-<div>
+{{!-- <div>
     {{#each beersFromApi}}
     <div>
     <h2>{{this.name}}</h2>
@@ -9,4 +9,10 @@
     <img src="{{this.image_url}}" alt="{{this.name}}">
     </div>
     {{/each}}
-</div>
+</div> --}}
+
+
+
+{{#each beersFromApi}}
+{{> partials}}
+{{/each}}
